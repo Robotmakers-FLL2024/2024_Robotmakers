@@ -1,0 +1,40 @@
+from pybricks.hubs import InventorHub
+from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor
+from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
+from pybricks.robotics import DriveBase, GyroDriveBase
+from pybricks.tools import wait, StopWatch
+
+hub = InventorHub()
+
+#left motor - Port C
+#right motor - Port D
+#attach motor - Port A
+#left color sensor -
+#right color sensor -
+
+left_motor = Motor(Port.C, Direction.COUNTERCLOCKWISE)
+right_motor = Motor(Port.D)
+attach_motor = Motor(Port.A)
+
+robot_drive_base = GyroDriveBase(left_motor, right_motor, wheel_diameter=51, axle_track=104)
+
+robot_drive_base.turn(45)
+robot_drive_base.straight(390)
+robot_drive_base.turn(45)
+robot_drive_base.straight(290)
+wait(5)
+ 
+robot_drive_base.curve(150,300)
+wait(5)
+robot_drive_base.curve(150,300)
+robot_drive_base.turn(45)
+robot_drive_base.straight(175)
+robot_drive_base.turn(45)
+robot_drive_base.straight(125)
+
+right_motor.run(50)
+
+left_motor.run(100)
+
+
+
