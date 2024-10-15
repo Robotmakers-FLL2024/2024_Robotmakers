@@ -1,0 +1,19 @@
+from pybricks.hubs import PrimeHub
+from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
+from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
+from pybricks.robotics import DriveBase
+from pybricks.tools import wait, StopWatch
+
+hub = PrimeHub()
+
+gyro_drive_base.turn(-40)
+gyro_drive_base.straight(100)
+gyro_drive_base. (add active motor to lift up handle to let the sub onto the
+ other side)
+gyro_drive_base.turn(90)
+gyro_drive_base.straight(300)
+gyro_drive_base. krill game(add active motor to lift up handle to let the krill fall 
+into the catcher)
+gyro_drive_base.straight(-50)
+gyro_drive_base.turn(-90)
+gyro_drive_base.straight(-620)
