@@ -1,0 +1,42 @@
+from pybricks.hubs import PrimeHub
+from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor, ForceSensor
+from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
+from pybricks.robotics import DriveBase
+from pybricks.tools import wait, StopWatch
+
+hub = PrimeHub()
+
+#left motor - Port C
+#right motor - Port A
+#attach motor - Port F
+#attach motor2 - Port B
+#color sensor left - Port 
+#color sensor right - Port 
+
+left_motor = Motor(Port.C, Direction.COUNTERCLOCKWISE)
+right_motor = Motor(Port.D)
+attach_motor = Motor(Port.E)  
+attach_motor2 = Motor(Port.F)
+#color_sensor1 = Motor(Port.F)
+#color_sensor_2 = Motor(Port.E)
+
+
+robot_drive_base = DriveBase(left_motor, right_motor, wheel_diameter=51, axle_track=104)
+(800, 2000, 800, 4000)
+
+# Start at cell 8, position the extension straight up
+robot_drive_base.straight(500)
+wait(100)
+robot_drive_base.turn(70)
+robot_drive_base.straight(120)
+robot_drive_base.turn(-70)
+robot_drive_base.straight(300)
+wait(100)
+attach_motor2.run_angle(speed=1900, rotation_angle=-1080,
+                                     then=Stop.HOLD, wait=True)
+wait(100)
+attach_motor2.run_angle(speed=1900, rotation_angle=360,
+                                     then=Stop.HOLD, wait=True)
+robot_drive_base.straight(-500)
+robot_drive_base.turn(45)
+robot_drive_base.straight(-300)
