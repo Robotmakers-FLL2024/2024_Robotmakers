@@ -1,0 +1,6 @@
+gyro_drive_base.straight(-800)
+gyro_drive_base.turn(-80)
+gyro_drive_base.straight(-50)
+gyro_drive_base.straight(50)
+gyro_drive_base.turn(-80)
+gyro_drive_base.straight(800)
